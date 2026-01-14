@@ -143,3 +143,167 @@ Inšpirované správaním zvierat (kolektívna inteligencia).
     *   *SOMA:* Skočí smerom k lídrovi.
 
 ---
+
+# Prehľad optimalizačných algoritmov a ich použitia
+
+---
+
+## 1) Hill Climbing
+**Reálne použitie:**
+- lokálna optimalizácia parametrov
+- ladenie hyperparametrov (ML)
+- plánovanie a optimalizácia trás s malou zložitosťou
+- scheduling (krátke úlohy)
+- optimalizácia jednoduchých funkcií
+
+**Nevhodné pre:**
+- problémy s mnohými lokálnymi minimami
+
+---
+
+## 2) Simulated Annealing (SA)
+**Použitie:**
+- TSP a kombinatorické problémy
+- optimalizácia výrobných liniek
+- layout čipov (mikroelektronika)
+- optimalizácia portfólií
+- routing v sieťach
+- optimalizácia designu (architektúra, inžinierstvo)
+
+**Dôvod:**
+- vie unikať z lokálnych miním → vhodné na rugged landscape
+
+---
+
+## 3) Blind Search (ochutnávková heuristika)
+**Použitie:**
+- baseline na porovnanie algoritmov
+- malé nenáročné funkcionality
+- experimentálne merania
+- random search v ML (hyperparametre)
+
+---
+
+## 4) Tabu Search
+**Použitie:**
+- kombinatorická optimalizácia
+- scheduling, timetabling (rozvrhy)
+- vehicle routing (VRP)
+- TSP
+- priemyselné plánovanie (výroba, preprava)
+- telekomunikačné siete
+
+**Dôvod:**
+- pamäť + zakázané pohyby → uniká lepšie z lokálnych miním než HC
+
+---
+
+## 5) Genetic Algorithm (GA)
+**Použitie:**
+- evolučný design (antény, drony)
+- optimalizácia parametrov pre ML
+- automatizované obchodovanie
+- engineering design (mechanika, aerodynamika)
+- bioinformatika
+- scheduling (letiská, logistika)
+- hry a AI (evolúcia strategií)
+
+---
+
+## 6) Differential Evolution (DE)
+**Použitie:**
+- globálna optimalizácia black-box funkcií
+- kalibrácia modelov (chemické, fyzikálne, biologické)
+- tuning neurónových sietí
+- inverzné problémy (geofyzika)
+- systémová identifikácia
+- elektronické obvody
+
+**Poznámka:**
+- silné tam, kde derivácia neexistuje alebo je špinavá
+
+---
+
+## 7) Particle Swarm Optimization (PSO)
+**Použitie:**
+- kontinuálne optimalizačné úlohy
+- control engineering (PID tuning)
+- neural network training
+- fuzzy systems tuning
+- robot path planning
+- radar / sonar optimalizácia
+- ekonomické modely
+
+**Poznámka:**
+- obľúbené v robotike a automatizácii
+
+---
+
+## 8) SOMA (Self Organizing Migrating Algorithm)
+**Použitie:**
+- optimalizácia technických parametrov
+- engineering design
+- robotika (trajektórie)
+- optimalizácia modelov a simulácií
+- systémové ladenie (control)
+
+**Silné pri:**
+- multimodálnych problémoch
+
+---
+
+## 9) Ant Colony Optimization (ACO)
+**Použitie (hlavné):**
+- TSP
+- routing v sieťach (dáta, telekomunikácie)
+- logistika / plánovanie trás
+- robot path planning
+- flow scheduling
+
+**Charakteristika:**
+- hľadanie ciest v grafoch
+
+---
+
+## 10) Teaching–Learning Based Optimization (TLBO)
+**Použitie:**
+- optimalizácia kontinuálnych funkcií
+- kalibrácia parametrov
+- structural design
+- optimalizácia výrobných procesov
+- optimalizácia energetických systémov
+
+**Výhoda:**
+- bezparametrový → jednoduché použitie
+
+---
+
+## 11) Firefly Algorithm
+**Použitie:**
+- multimodálna optimalizácia
+- image processing
+- thresholding v computer vision
+- energetické systémy
+- engineering design
+- bioinformatika
+
+**Dôvod:**
+- dobre preskakuje lokálne minimá
+
+---
+
+## 12) NSGA-II (multi-objective GA)
+**Použitie:**
+- multi-objective engineering
+- aerodynamika (drag vs lift)
+- investičné portfóliá (zisk vs riziko)
+- distribučné siete (náklady vs bezpečnosť)
+- energetika (výkon vs spotreba)
+- evolučný design
+- architektúra + plánovanie
+- biomedicína
+
+**Výstup:**
+- Pareto fronta (nie jedno optimálne riešenie)
+
+---
